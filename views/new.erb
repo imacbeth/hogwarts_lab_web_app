@@ -7,13 +7,9 @@
 
   <label for="house-select">Select a house</label>
   <select name="house_id" id="house-select">
-    <!-- <% for house in @houses
-    return house.name  %> -->
-
-  <option value="<%=@house1.name%>"> Gryffindor  </option>
-  <option value="<%=@house2.id%>"> Slytherin</option>
-  <option value="<%=@house3.name%>"> Ravenclaw</option>
-  <option value="<%=@house4.name%>"> Hufflepuff</option>
+    <% for house in @houses %>
+    <option value="<%=@house.id%>"> <%= house.name.capitalize  %> </option>
+    <% end  %>
   </select>
 
 
