@@ -33,5 +33,12 @@ class House
     SqlRunner.run(sql)
   end
 
+  def find_by_id(id)
+    sql = "SELECT * FROM houses WHERE id =$1"
+    values = [id]
+    house_data = SqlRunner.run(sql,values)
+    return house_data.first()
+  end
+
 
 end
