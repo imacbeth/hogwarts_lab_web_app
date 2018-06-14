@@ -1,7 +1,9 @@
 require_relative("../models/students.rb")
+require_relative("../models/house.rb")
 require("pry")
 
 Student.delete_all()
+House.delete_all
 
 student1 = Student.new({
  'first_name'=> "Harry",
@@ -11,6 +13,13 @@ student1 = Student.new({
   })
 
   student1.save()
+
+  house1 = House.new({
+    'name' => "Griffindor",
+    'logo_url' => "gryffindor.jpg"
+    })
+
+  house1.save()
 
   binding.pry
 nil
