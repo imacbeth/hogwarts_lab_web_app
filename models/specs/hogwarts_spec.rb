@@ -4,7 +4,7 @@ require_relative('../students.rb')
 class TestStudent < MiniTest::Test
 
   def setup
-    options = {'id' =>1, 'first_name'=> "Harry", 'last_name' => "Potter", 'house' =>'Griffindor', 'age' => 17}
+    options = {'id' =>1, 'first_name'=> "Harry", 'last_name' => "Potter", 'house' =>'Gryffindor', 'age' => 17}
 
     @student1 = Student.new(options)
   end

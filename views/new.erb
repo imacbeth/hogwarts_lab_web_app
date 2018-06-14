@@ -6,11 +6,14 @@
   <input id= "last-name" type="text" name="last_name">
 
   <label for="house-select">Select a house</label>
-  <select name="house" id="house-select">
-  <option value="Griffindor"> Griffindor  </option>
-  <option value="Slytherin"> Slytherin</option>
-  <option value="Ravenclaw"> Ravenclaw</option>
-  <option value="Hufflepuff"> Hufflepuff</option>
+  <select name="house_id" id="house-select">
+    <!-- <% for house in @houses
+    return house.name  %> -->
+
+  <option value="<%=@house1.name%>"> Gryffindor  </option>
+  <option value="<%=@house2.id%>"> Slytherin</option>
+  <option value="<%=@house3.name%>"> Ravenclaw</option>
+  <option value="<%=@house4.name%>"> Hufflepuff</option>
   </select>
 
 

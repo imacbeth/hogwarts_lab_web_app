@@ -14,6 +14,7 @@ end
 #new
 
 get '/students/new' do
+  @houses = House.find_all(params[:id].to_i())
   erb(:new)
 end
 
